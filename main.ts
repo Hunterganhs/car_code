@@ -1,3 +1,4 @@
+// all code is contained in the "on button A pressed" funk
 input.onButtonPressed(Button.A, function () {
     cuteBot.moveTime(cuteBot.Direction.forward, 50, 1)
     basic.pause(100)
@@ -33,6 +34,7 @@ input.onButtonPressed(Button.A, function () {
     basic.pause(5000)
     cuteBot.stopcar()
     basic.pause(100)
+    music._playDefaultBackground(music.builtInPlayableMelody(Melodies.Wawawawaa), music.PlaybackMode.InBackground)
     basic.pause(100)
     for (let index = 0; index < 1e+26; index++) {
         strip.showColor(neopixel.colors(NeoPixelColors.Indigo))
@@ -42,6 +44,8 @@ input.onButtonPressed(Button.A, function () {
         strip.showColor(neopixel.colors(NeoPixelColors.Red))
         basic.pause(1000)
         strip.clear()
+        basic.pause(1000)
+        strip.showColor(neopixel.colors(NeoPixelColors.White))
         basic.pause(1000)
     }
 })
