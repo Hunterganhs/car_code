@@ -1,5 +1,4 @@
 input.onButtonPressed(Button.A, function () {
-    record.startRecording(record.BlockingState.Blocking)
     cuteBot.moveTime(cuteBot.Direction.forward, 50, 1)
     basic.pause(100)
     cuteBot.motors(75, -75)
@@ -34,9 +33,7 @@ input.onButtonPressed(Button.A, function () {
     basic.pause(5000)
     cuteBot.stopcar()
     basic.pause(100)
-    music._playDefaultBackground(music.builtInPlayableMelody(Melodies.Entertainer), music.PlaybackMode.InBackground)
     basic.pause(100)
-    record.playAudio(record.BlockingState.Blocking)
     for (let index = 0; index < 1e+26; index++) {
         strip.showColor(neopixel.colors(NeoPixelColors.Indigo))
         basic.pause(1000)
