@@ -34,7 +34,7 @@ input.onButtonPressed(Button.A, function () {
     basic.pause(5000)
     cuteBot.stopcar()
     basic.pause(100)
-    music._playDefaultBackground(music.builtInPlayableMelody(Melodies.Wawawawaa), music.PlaybackMode.InBackground)
+    music._playDefaultBackground(music.builtInPlayableMelody(Melodies.Nyan), music.PlaybackMode.InBackground)
     basic.pause(100)
     for (let index = 0; index < 1e+26; index++) {
         strip.showColor(neopixel.colors(NeoPixelColors.Indigo))
